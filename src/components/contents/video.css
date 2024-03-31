@@ -1,0 +1,157 @@
+.multi-video-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .video-row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .video-row > * {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .video-row:last-child {
+    margin-bottom: 0; /* Remove margin from last row */
+  }
+  .video-player{
+    height: 250px;
+    width: 400px;
+  }
+  .video{
+    height: 200px;
+  }
+  /* video.css */
+.video-player {
+    margin-bottom: 20px; /* Add some margin at the bottom */
+  }
+  
+  .video-player video {
+    width: 100%; /* Make the video player full-width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add some border radius */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .video-player video::-webkit-media-controls {
+    display: flex; /* Show the controls */
+    justify-content: center; /* Center the controls horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
+    border-radius: 8px; /* Add some border radius to controls */
+  }
+  
+  .video-player video::-webkit-media-controls-play-button,
+  .video-player video::-webkit-media-controls-volume-slider {
+    display: none; /* Hide the play button and volume slider */
+  }
+  
+  .video-player video::-webkit-media-controls-current-time-display,
+  .video-player video::-webkit-media-controls-time-remaining-display,
+  .video-player video::-webkit-media-controls-seek-back-button,
+  .video-player video::-webkit-media-controls-seek-forward-button,
+  .video-player video::-webkit-media-controls-mute-button,
+  .video-player video::-webkit-media-controls-fullscreen-button {
+    color: white; /* Set color of time display and other buttons */
+  }
+/* video.css */
+.video-player {
+    position: relative; /* Position the controls relative to the video player */
+  }
+  
+  .controls {
+    position: absolute; /* Position the controls absolutely */
+    bottom: 10px; /* Adjust the position from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex; /* Display the controls in a row */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .stream-button {
+    padding: 10px 20px; /* Adjust padding */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius */
+  
+    margin-left: 687px;
+
+  }
+  
+  .logo-button {
+    padding: 5px; /* Adjust padding */
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove button border */
+    margin-right: 5px; /* Adjust margin between buttons */
+  }
+  
+  .logo-button img {
+    width: 30px; /* Adjust logo image size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  /* video.css */
+.logo-buttons {
+    position: relative; /* Position the dot relative to the button */
+    padding: 0; /* Remove padding */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    width: 30px;
+    height: 32px;
+    border-radius:4px;
+    margin-left: 9px;
+  }
+  
+  .logo-button img {
+    width: 50px; /* Adjust logo size */
+  }
+  
+  .logo-button::after {
+    content: ''; /* Add content */
+    position: absolute; /* Position the dot absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    width: 11px;
+    height: 12px;
+    background-color: red; /* Dot color */
+    border-radius: 50%; /* Make dot round */
+  }
+  .controls{
+    margin-top: 0px;
+    background-color: #27282A;
+    height: 46px;
+    width: 933px;
+    margin-left: -20px;
+}
+
+.controls {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+  }
+  .micro{
+    color: white;
+    margin-top: 5px;
+    margin-left: 9px;
+  }
+  .video-player {
+    display: inline-block;
+    margin: 5px;
+}
+
+.video-player video {
+    width: 100%; /* Set the default width */
+    transition: width 0.3s; /* Add transition for smooth animation */
+}
+
+.video-player.selected video {
+    width: 200%; /* Increase the width when selected */
+}

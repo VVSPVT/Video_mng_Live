@@ -1,0 +1,17 @@
+.app {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Sidebar - Content - Sidebar */
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header"
+    "sidebar-left content sidebar-right";
+
+}
+
+
+
+.content {
+  grid-area: content;
+  padding: 20px;
+  background-color: #040404;
+}
